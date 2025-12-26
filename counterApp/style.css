@@ -24,3 +24,9 @@ h1 {
   width: 300px;
   justify-content: space-evenly;
 }
+
+.cont-reset {
+  text-align: center;
+  font-family: "Helvetica";
+  color : red;
+}

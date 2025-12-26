@@ -11,20 +11,26 @@ const btn_3 = document.getElementById("btn-3")
 console.log(btn_1)
 
 // this is fetching the number on the screen
-let number = document.querySelector("#num-main").innerText
+let number = parseInt(document.querySelector("#num-main").innerText)
 console.log(number)
 
 // this are the EventHandlers for the clicks
 btn_1.addEventListener("click", function() {
-  document.querySelector("#num-main").innerText = number ++;
+  document.querySelector("#num-main").innerText = ++number;
 })
 
 btn_2.addEventListener("click", function() {
-  document.querySelector("#num-main").innerText = number --;
+  document.querySelector("#num-main").innerText = --number;
 })
+
+// this is for reset counter
+let reset = parseInt(document.querySelector("#reset-counter").innerText)
+console.log(reset);
 
 btn_3.addEventListener("click", function() {
-  document.querySelector("#num-main").innerText = 0;
+  number = 0;
+  document.querySelector("#num-main").innerText = number;
+  document.querySelector("#reset-counter").innerText =  ++reset;
+  alert("You've hit the reset !")
 })
-
 
