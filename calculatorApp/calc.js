@@ -133,3 +133,4 @@ allclear.addEventListener("click", function(){
   digits.textContent =  finalResult;
   removeArr();
 })
+
