@@ -12,6 +12,8 @@ Used Things:
 
 # 2. Color Changer
 
+<img src="/imgs/colorChanger.png" alt="colorChanger.png">
+
 Used Things:
 - Random Numbers from Math inbuilt function
 - Arrays
@@ -19,12 +21,16 @@ Used Things:
 
 # 3. Digital Clock
 
+<img src="/imgs/digitalClock.png" alt="digitalClock.png">
+
 Used Things:
 - Date() object
 - setTimeout() also i tried it with setInterval
 - Formatting Values
 
 # 4. TO-DO List
+
+<img src="/imgs/toDOList.png" alt="toDoList.png">
 
 Used Things:
 - CRUD Operations
