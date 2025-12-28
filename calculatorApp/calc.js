@@ -4,6 +4,7 @@ console.log(digits.textContent)
 const arrDigits = [
 ]
 
+// this are numpad buttons
 const zero = document.querySelector(".zero")
 const one = document.querySelector(".one")
 const two = document.querySelector(".two")
@@ -14,54 +15,121 @@ const six = document.querySelector(".six")
 const seven = document.querySelector(".seven")
 const eight = document.querySelector(".eight")
 const nine = document.querySelector(".nine")
+const dot = document.querySelector(".dot")
 
-zero.addEventListener("click", function(){
-  arrDigits.push(0); 
+const trip = function(t){
+  arrDigits.push(t); 
+  let convert = arrDigits.toString();
+  let rem = arrDigits.join("");
+  digits.textContent = rem;
   console.log(arrDigits);
-  digits.textContent = arrDigits;
+
+}
+zero.addEventListener("click", function(){
+  trip(0);
 })
 
 one.addEventListener("click", function(){
-  arrDigits.push(1); 
-  console.log(arrDigits);
+  trip(1);
 })
 
 two.addEventListener("click", function(){
-  arrDigits.push(2); 
-  console.log(arrDigits);
+  trip(2);
 })
 
 three.addEventListener("click", function(){
-  arrDigits.push(3); 
-  console.log(arrDigits);
+  trip(3);
 })
 
 four.addEventListener("click", function(){
-  arrDigits.push(4); 
-  console.log(arrDigits);
+  trip(4);
 })
 
 five.addEventListener("click", function(){
-  arrDigits.push(5); 
-  console.log(arrDigits);
+  trip(5);
 })
 
 six.addEventListener("click", function(){
-  arrDigits.push(6); 
-  console.log(arrDigits);
+  trip(6);
 })
 
 seven.addEventListener("click", function(){
-  arrDigits.push(7); 
-  console.log(arrDigits);
+  trip(7);
 })
 
 eight.addEventListener("click", function(){
-  arrDigits.push(8); 
-  console.log(arrDigits);
+  trip(8);
 })
 
 nine.addEventListener("click", function(){
-  arrDigits.push(9); 
+  trip(9);
+})
+
+dot.addEventListener("click", function(){
+  trip(".")
+})
+
+// this are operation buttons
+const plus = document.querySelector(".plus")
+const minus = document.querySelector(".minus")
+const multiply = document.querySelector(".multiply")
+const divide = document.querySelector(".divide")
+const equal = document.querySelector(".equal")
+const allclear = document.querySelector(".clear")
+
+const paradise = function(m) {
+  arrDigits.push(m);
+  let convert = arrDigits.toString();
+  let rem = arrDigits.join("");
+  digits.textContent = rem;
   console.log(arrDigits);
+}
+
+plus.addEventListener("click", function(){
+  paradise("+");
+})
+minus.addEventListener("click", function(){
+  paradise("-");
+})
+multiply.addEventListener("click", function(){
+  paradise("*");
+})
+divide.addEventListener("click", function(){
+  paradise("/");
+})
+
+const removeArr = function() {
+  let len = arrDigits.length;
+  for (i = 0; i < len; i++) {
+    arrDigits.pop();
+  }
+}
+
+const edge = function(param){
+  let len = arrDigits.length;
+  for (i=0; i < len; i++) {
+    if (arrDigits[0] === "Infinity") {
+      arrDigits.pop();
+    } else {
+      arrDigits.push(param);
+    }
+  }
+}
+
+equal.addEventListener("click",function(){
+  let convert = arrDigits.toString();
+  let rem = arrDigits.join("");
+  let finalResult = eval(rem);
+  digits.textContent = finalResult;
+  let lastResult = finalResult;
+  removeArr();
+  edge(lastResult);
+})
+
+allclear.addEventListener("click", function(){
+  let convert = arrDigits.toString();
+  let rem = arrDigits.join("");
+  let finalResult = eval(0);
+  digits.textContent =  finalResult;
+  removeArr();
 })

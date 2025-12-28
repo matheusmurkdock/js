@@ -1,10 +1,12 @@
 html,
 body {
   height: 100vh;
+  background-color: lightblue;
 }
 
 .global-container {
   display: flex;
+  background-color: lightblue;
   flex-direction: column;
   align-items: center;
   justify-content: center;
