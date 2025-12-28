@@ -8,6 +8,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
   background-color: cornflowerblue;
   height: 100%;
 }
@@ -89,4 +90,9 @@ h1 {
   border-top: none;
   border-bottom: 1px solid grey;
   width: 200px;
+}
+
+#sign {
+  text-align: center;
+  color: black;
 }
