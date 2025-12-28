@@ -30,7 +30,7 @@ Used Things:
 
 # 4. TO-DO List
 
-<img src="/imgs/toDOList.png" alt="toDoList.png">
+<img src="/imgs/toDoList.png" alt="toDoList.png">
 
 Used Things:
 - CRUD Operations
