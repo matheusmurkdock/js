@@ -37,3 +37,12 @@ Used Things:
 - Event Counter for Tasks
 - Dynamic DOM Creation
 
+# 5. Calculator App
+
+<img src="/imgs/calculator.png" alt="calculator.png">
+
+Used Things:
+- Expression Handling
+- Logic Mapping
+- Edge cases Handling (dividing by 0)
+- Using display:grid; and grid-template-area for buttons
