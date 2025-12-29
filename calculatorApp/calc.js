@@ -1,8 +1,7 @@
 let digits = document.querySelector("#digits")
 console.log(digits.textContent)
 
-const arrDigits = [
-]
+const arrDigits = []
 
 // this are numpad buttons
 const zero = document.querySelector(".zero")
@@ -134,3 +133,52 @@ allclear.addEventListener("click", function(){
   removeArr();
 })
 
+$(document).keydown(function(e){
+  switch (e.keyCode) {
+    case 48:
+      trip(0);
+      break;
+    case 49:
+      console.log("1 was pressed");
+      trip(1);
+      break;
+    case 50:
+      trip(2);
+      break;
+    case 51:
+      trip(3);
+      break;
+    case 52:
+      trip(4);
+      break;
+    case 53:
+      trip(5);
+      break;
+    case 54:
+      trip(6);
+      break;
+    case 55:
+      trip(7);
+      break;
+    case 56:
+      trip(8);
+      break;
+    case 57:
+      trip(9);
+      break;
+    case 107:
+      paradise("+");
+      break;
+    case 109:
+      paradise("-");
+      break;
+    case 106:
+      paradise("*");
+      break;
+    case 111:
+      paradise("/");
+      break;
+    default:
+      break;
+  }
+})

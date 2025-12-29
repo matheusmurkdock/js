@@ -23,6 +23,8 @@ Used Things:
 
 <img src="/imgs/digitalClock.png" alt="digitalClock.png">
 
+[Click Me](https://calculator-app-kunalkokande.netlify.app/)
+
 Used Things:
 - Date() object
 - setTimeout() also i tried it with setInterval
@@ -31,6 +33,8 @@ Used Things:
 # 4. TO-DO List
 
 <img src="/imgs/toDoList.png" alt="toDoList.png">
+
+[Click Me](https://todo-list-kunalkokande.netlify.app/)
 
 Used Things:
 - CRUD Operations
