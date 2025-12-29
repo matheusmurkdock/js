@@ -43,7 +43,7 @@ Used Things:
 
 <img src="/imgs/calculator.png" alt="calculator.png">
 
-[Click Me](https://calculator-app-kunalkokande.netlify.app/){:target="_blank"}
+<a href="https://calculator-app-kunalkokande.netlify.app/" target="_blank">Click Me</a>
 
 Used Things:
 - Expression Handling
