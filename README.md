@@ -32,7 +32,7 @@ Used Things:
 
 <img src="/imgs/toDoList.png" alt="toDoList.png">
 
-[Click Me](https://todo-list-kunalkokande.netlify.app/){:target="_blank"}
+[Click Me](https://todo-list-kunalkokande.netlify.app/)
 
 Used Things:
 - CRUD Operations
