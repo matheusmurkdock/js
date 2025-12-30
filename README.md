@@ -50,3 +50,13 @@ Used Things:
 - Logic Mapping
 - Edge cases Handling (dividing by 0)
 - Using display:grid; and grid-template-area for buttons
+
+# 6. Modal Popup System
+
+<img src="/imgs/popup.gif" alt="popup.gif">
+
+Used Things:
+- CSS and JS Coordination
+- Reusable components
+- Accessibility basics like using display property in a whole new way
+- Buttons
