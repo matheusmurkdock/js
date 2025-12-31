@@ -31,6 +31,13 @@ body {
   border-bottom: 2px solid black;
 }
 
+.question {
+  height: 50px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .opt {
   background-color: olivedrab;
   margin: 2px;
